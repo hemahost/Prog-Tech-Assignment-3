@@ -11,11 +11,12 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class HighScores {
+    
     private final Connection connection;
     private final PreparedStatement insertStatement;
     private static final String DB_URL = "jdbc:mysql://localhost:3306/highscores";
     private static final String USER = "root";
-    private static final String PASSWORD = "Maho90287";
+    private static final String PASSWORD = "root";
 
     public HighScores() throws SQLException {
         connection = DriverManager.getConnection(DB_URL, USER, PASSWORD);
